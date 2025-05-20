@@ -10,7 +10,7 @@ Java language was developed in such a way that it does not depend on any hardwar
 - This ensures that the memory resource is used efficiently, but it provides no guarantee that there would be sufficient memory for the program execution.
 - [Heap memory](https://opendsa-server.cs.vt.edu/ODSA/Books/CS2/html/HeapMem.html) would be cleared on garbage collection.
 
-# Garbage collection impacts to Java performance
+## Garbage collection impacts to Java performance
 - The most common performance problem associated with Java™ relates to the [garbage collection mechanism](https://www.ibm.com/docs/no/aix/7.2?topic=monitoring-garbage-collection-impacts-java-performance).
 - If the size of the Java heap is too large, the heap must reside outside main memory. This causes increased paging activity, which affects Java performance.
 - Also, a large heap can take several seconds to fill up. This means that even if garbage collection occurs less frequently, pause times associated with garbage collection increase.
