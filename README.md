@@ -37,12 +37,12 @@ Java language was developed in such a way that it does not depend on any hardwar
 - It helps developers to follow modularity while developing software by ensuring that each object is independent of other objects by having its own methods, attributes, and functionalities. 
 - It is used for the security of the private properties of an object and hence serves the purpose of data hiding.
 
-<img title="Java - JDK vs JRE vs JVM" alt="Alt text" src="Others/Java - JDK vs JRE vs JVM.drawio.png">
-
 # JRE vs JVM 
 - The main function of JRE is to provide a runtime environment to run java applications, whereas JVM converts a byte code to machine code for execution and provides platform independence.
 - JRE acts as a container and jvm acts as content.
 - JRE is composed of JVM + Libraries to run applications, whereas jvm contains only a runtime environment for executing Java bytecode.
+
+<img title="Java - JDK vs JRE vs JVM" alt="Alt text" src="Others/Java - JDK vs JRE vs JVM.drawio.png">
 
 # Just In Time(JIT) compiler
 - JIT stands for `Just-In-Time` & it is used for improving the performance during run time. It does the task of compiling parts of byte code having similar functionality at the same time thereby reducing the amount of compilation time for the code to run.
@@ -137,9 +137,9 @@ Servlets in java provide an interface known as `HttpSessionInterface`.
 - public long `getLastAccessedTime()`: The time when the session was last accessed is returned by this method. It is measured in milliseconds.
 - public void `invalidate()`: A session can be invalidated by using this method.
 
-# [Java Stream](https://www.geeksforgeeks.org/stream-in-java/)
+# Java Stream
 
-Java Stream is by default supported for Collection interfaces. 
+[Java Stream](https://www.geeksforgeeks.org/stream-in-java/) is by default supported for Collection interfaces. 
 - To use streams for other data types, we can use [Streams.of(variale)](https://stackify.com/streams-guide-java-8/).
 
 ![image](https://user-images.githubusercontent.com/1247944/175827637-cf1f634e-6850-49d0-9039-0d9b3093902e.png)
@@ -218,7 +218,8 @@ List<Integer> number = Arrays.asList(2, 3, 4, 5);
 number.stream().map(x -> x*x).forEach(y->System.out.println(y));
 ```  
 
-# [Generics](https://www.geeksforgeeks.org/generics-in-java/)
+# Generics
+- [Read more](https://www.geeksforgeeks.org/generics-in-java/)
 
 ## Type Parameters in Java Generics
 
@@ -255,9 +256,8 @@ Whenever inside a method, if an exception has occurred, the method creates an Ob
 
 ![image](https://user-images.githubusercontent.com/1247944/175828367-7389509d-e5e9-45fb-8a62-94601db0d915.png)
 
-# [Advanced MultiThreading](https://github.com/eugenp/tutorials/tree/master/core-java-modules/core-java-concurrency-advanced/src/main/java/com/baeldung)
-
 # References
+- [Advanced MultiThreading](https://github.com/eugenp/tutorials/tree/master/core-java-modules/core-java-concurrency-advanced/src/main/java/com/baeldung)
 - https://www.geeksforgeeks.org/spring-componentscan-annotation-with-example/
 - https://www.codejava.net/coding/what-is-dependency-injection-with-java-code-example
 - https://www.interviewbit.com/java-interview-questions/

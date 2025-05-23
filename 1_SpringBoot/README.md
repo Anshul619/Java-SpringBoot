@@ -113,9 +113,9 @@ spring --help
 # What dependency needed to create a Spring Boot web application?
 - Spring Boot Starter Web
 
-# [Configure the Logging Levels](https://www.baeldung.com/spring-boot-application-configuration)
+# Configure the Logging Levels
 
-You can easily tune the logging levels in a Boot application.
+You can easily tune the [logging levels](https://www.baeldung.com/spring-boot-application-configuration) in a Boot application.
 - And just as with a standard Spring app – you can activate different logging systems like Logback, log4j, log4j2, etc. by adding their customized XML or properties file in the classpath and defining the libraries in the pom.
 
 ```config
@@ -127,35 +127,15 @@ logging.level.org.hibernate: ERROR
 
 ![](assets/Spring-Boot-MicroService-OnPerm.drawio.png)
 
-## Zulu API Gateway
-- [Read more](../../../1_HLDDesignComponents/1_MicroServicesSOA/1_APIGateway/ZuluAPIGateway.md)
-
-## Eureka Server for Service Registry and discovery
-- [Read more](../../../1_HLDDesignComponents/1_MicroServicesSOA/2_ServiceRegistry&Discovery/Eureka.md)
-
-## [Microservices - Testing strategy](https://www.simform.com/blog/microservice-testing-strategies/)
-
-![img.png](assets/testing_img.png)
-
-### End-to-End testing in Microservices
-- We usually treat the system as a black box while performing end-to-end tests. 
-- Because, of course the intention differs from other tests, it verifies that the system as a whole meets business goals irrespective of the component architecture in use.
-
-# [Domain-Driven Design](https://domaindrivendesign.org/ddd-domain-driven-design/)
-
-![img.png](assets/ddd_img.png)
-- Think Domain-Driven Design, and with that in mind, you divide the logical structure of your project not as classes only, but as domains also. 
-- This means all operations have got to do with the `Product` are located within the `ProductsController` and consequently within the `ProductsRepository`
-- Hence, its preferred each repository is equipped with operations to deal with some aspect of your project.
-- Not all aspects may need a repository, but that is what you decide.
+## Components
+- [Zulu API Gateway](https://github.com/Anshul619/HLD-System-Designs/tree/main/5_MicroServices/1_APIGateway/ZuluAPIGateway.md)
+- [Eureka Server for Service Registry and discovery](https://github.com/Anshul619/HLD-System-Designs/tree/main/5_MicroServices/2_ServiceRegistry%26Discovery/Eureka.md)
 
 # References
 - https://www.javatpoint.com/microservices
 - https://www.interviewbit.com/spring-boot-interview-questions/
 - https://java2blog.com/spring-restcontroller-example/
 - https://res.cloudinary.com/deop9ytsv/image/upload/v1545143589/1_Z8HUa8vdvIrF68crSJOPTQ.png
-- https://medium.com/geekculture/zuul-api-gateway-2bcdf4dd33e6
-- https://www.javatpoint.com/eureka-naming-server
 - https://1nwu8i3sj55rdbw4k4fm55i1-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/MSArchitech.png
 - https://res.cloudinary.com/practicaldev/image/fetch/s--DXg7gK9m--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn-images-1.medium.com/max/2000/1*b4krMVZ-mqjxAIh_EM1jhQ.png
 - https://stackoverflow.com/questions/6887971/single-or-multiple-repository-classes
